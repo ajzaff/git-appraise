@@ -1,4 +1,6 @@
-# Distributed Code Review For Git
+# `git review`
+
+Distributed Code Review For Git.
 
 This repo contains a command line tool for performing distributed code reviews on git
 repositories.
