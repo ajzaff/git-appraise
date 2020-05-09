@@ -21,8 +21,8 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review"
+	"github.com/ajzaff/git-review/repository"
+	"github.com/ajzaff/git-review/review"
 )
 
 var rebaseFlagSet = flag.NewFlagSet("rebase", flag.ExitOnError)

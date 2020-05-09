@@ -18,10 +18,11 @@ package analyses
 
 import (
 	"fmt"
-	"github.com/google/git-appraise/repository"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/ajzaff/git-review/repository"
 )
 
 const (

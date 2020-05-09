@@ -115,7 +115,7 @@ func (repo *GitRepo) GetCoreEditor() (string, error) {
 
 // GetSubmitStrategy returns the way in which a review is submitted
 func (repo *GitRepo) GetSubmitStrategy() (string, error) {
-	submitStrategy, _ := repo.runGitCommand("config", "appraise.submit")
+	submitStrategy, _ := repo.runGitCommand("config", "review.submit")
 	return submitStrategy, nil
 }
 
@@ -850,7 +850,7 @@ func (repo *GitRepo) fetchNotes(remote, notesRefPattern,
 // a remote repo, and merges them with the corresponding local refs.
 //
 // For notes refs, we assume that every note can be automatically merged using
-// the 'cat_sort_uniq' strategy (the git-appraise schemas fit that requirement),
+// the 'cat_sort_uniq' strategy (the git-review schemas fit that requirement),
 // so we automatically merge the remote notes into the local notes.
 //
 // For "archive" refs, they are expected to be used solely for maintaining

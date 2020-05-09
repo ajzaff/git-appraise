@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review/gpg"
+	"github.com/ajzaff/git-review/repository"
+	"github.com/ajzaff/git-review/review/gpg"
 )
 
 // Ref defines the git-notes ref that we expect to contain review comments.

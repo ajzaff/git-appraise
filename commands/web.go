@@ -9,13 +9,13 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/google/git-appraise/repository"
+	"github.com/ajzaff/git-review/repository"
 )
 
 var webFlagSet = flag.NewFlagSet("web", flag.ExitOnError)
 
 var (
-	webPort = webFlagSet.Int("port", 12345, "Port to run git-appraise-web.")
+	webPort = webFlagSet.Int("port", 12345, "Port to run git-review-web.")
 )
 
 func openBrowser(url string) error {
@@ -37,7 +37,7 @@ func openBrowser(url string) error {
 func openWeb(args []string) error {
 	webFlagSet.Parse(args)
 
-	bin, err := exec.LookPath("git-appraise-web")
+	bin, err := exec.LookPath("git-review-web")
 	if err != nil {
 		return err
 	}

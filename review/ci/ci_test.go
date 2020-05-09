@@ -17,8 +17,9 @@ limitations under the License.
 package ci
 
 import (
-	"github.com/google/git-appraise/repository"
 	"testing"
+
+	"github.com/ajzaff/git-review/repository"
 )
 
 const testCINote1 = `{

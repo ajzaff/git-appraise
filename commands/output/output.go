@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/git-appraise/review"
+	"github.com/ajzaff/git-review/review"
 )
 
 const (

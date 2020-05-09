@@ -1,7 +1,6 @@
 # Distributed Code Review For Git
-[![Build Status](https://travis-ci.org/google/git-appraise.svg?branch=master)](https://travis-ci.org/google/git-appraise)
 
-This repo contains a command line tool for performing code reviews on git
+This repo contains a command line tool for performing distributed code reviews on git
 repositories.
 
 ## Overview
@@ -22,16 +21,16 @@ is installing the client on your workstation.
 Assuming you have the [Go tools installed](https://golang.org/doc/install), run
 the following command:
 
-    go get github.com/google/git-appraise/git-appraise
+    go get github.com/ajzaff/git-review/git-review
 
 Then, either make sure that `${GOPATH}/bin` is in your PATH, or explicitly add the
-"appraise" git alias by running the following command.
+"review" git alias by running the following command.
 
-    git config --global alias.appraise '!'"${GOPATH}/bin/git-appraise"
+    git config --global alias.review '!'"${GOPATH}/bin/git-review"
 
 #### Windows:
 
-    git config --global alias.appraise "!%GOPATH%/bin/git-appraise.exe"
+    git config --global alias.review "!%GOPATH%/bin/git-review.exe"
 
 ## Requirements
 
@@ -46,39 +45,39 @@ This tool expects to run in an environment with the following attributes:
 
 Requesting a code review:
 
-    git appraise request
+    git review request
 
 Pushing code reviews to a remote:
 
-    git appraise push [<remote>]
+    git review push [<remote>]
 
 Pulling code reviews from a remote:
 
-    git appraise pull [<remote>]
+    git review pull [<remote>]
 
 Listing open code reviews:
 
-    git appraise list
+    git review list
 
 Showing the status of the current review, including comments:
 
-    git appraise show
+    git review show
 
 Showing the diff of a review:
 
-    git appraise show --diff [--diff-opts "<diff-options>"] [<review-hash>]
+    git review show --diff [--diff-opts "<diff-options>"] [<review-hash>]
 
 Commenting on a review:
 
-    git appraise comment -m "<message>" [-f <file> [-l <line>]] [<review-hash>]
+    git review comment -m "<message>" [-f <file> [-l <line>]] [<review-hash>]
 
 Accepting the changes in a review:
 
-    git appraise accept [-m "<message>"] [<review-hash>]
+    git review accept [-m "<message>"] [<review-hash>]
 
 Submitting the current review:
 
-    git appraise submit [--merge | --rebase]
+    git review submit [--merge | --rebase]
 
 A more detailed getting started doc is available [here](docs/tutorial.md).
 
@@ -111,7 +110,7 @@ with the same timestamp, then the last such request in the note is treated
 as the current one.
 
 This design allows a user to update a review request by re-running the
-`git appraise request` command.
+`git review request` command.
 
 ### Continuous Integration Status
 
@@ -136,23 +135,23 @@ annotate the first revision in the review. They must conform to the
 
 ### Libraries
 
-  - [Go (use git-appraise itself)](https://github.com/google/git-appraise/blob/master/review/review.go)
-  - [Rust](https://github.com/Nemo157/git-appraise-rs)
+  - [Go (use git-review itself)](https://github.com/ajzaff/git-review/blob/master/review/review.go)
+  - [Rust](https://github.com/Nemo157/git-review-rs)
 
 ### Graphical User Interfaces
 
-  - [Git-Appraise-Web](https://github.com/google/git-appraise-web)
+  - [Git-review-Web](https://github.com/ajzaff/git-review-web)
 
 ### Plugins
 
-  - [Eclipse](https://github.com/google/git-appraise-eclipse)
+  - [Eclipse](https://github.com/ajzaff/git-review-eclipse)
   - [Jenkins](https://github.com/jenkinsci/google-git-notes-publisher-plugin)
 
 ### Mirrors to other systems
 
-  - [GitHub Pull Requests](https://github.com/google/git-pull-request-mirror)
-  - [Phabricator Revisions](https://github.com/google/git-phabricator-mirror)
+  - [GitHub Pull Requests](https://github.com/ajzaff/git-pull-request-mirror)
+  - [Phabricator Revisions](https://github.com/ajzaff/git-phabricator-mirror)
 
 ## Contributing
 
-Please see [the CONTRIBUTING file](CONTRIBUTING.md) for information on contributing to Git Appraise.
+Please see [the CONTRIBUTING file](CONTRIBUTING.md) for information on contributing to Git review.

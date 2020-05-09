@@ -14,24 +14,25 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// Command git-appraise manages code reviews stored as git-notes in the source repo.
+// Command git-review manages code reviews stored as git-notes in the source repo.
 //
 // To install, run:
 //
-//    $ go get github.com/google/git-appraise/git-appraise
+//    $ go get github.com/ajzaff/git-review/git-review
 //
 // And for usage information, run:
 //
-//    $ git-appraise help
+//    $ git-review help
 package main
 
 import (
 	"fmt"
-	"github.com/google/git-appraise/commands"
-	"github.com/google/git-appraise/repository"
 	"os"
 	"sort"
 	"strings"
+
+	"github.com/ajzaff/git-review/commands"
+	"github.com/ajzaff/git-review/repository"
 )
 
 const usageMessageTemplate = `Usage: %s <command>

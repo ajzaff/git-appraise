@@ -17,11 +17,12 @@ limitations under the License.
 package review
 
 import (
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review/comment"
-	"github.com/google/git-appraise/review/request"
 	"sort"
 	"testing"
+
+	"github.com/ajzaff/git-review/repository"
+	"github.com/ajzaff/git-review/review/comment"
+	"github.com/ajzaff/git-review/review/request"
 )
 
 func TestCommentSorting(t *testing.T) {

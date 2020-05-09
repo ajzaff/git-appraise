@@ -19,9 +19,10 @@ package ci
 
 import (
 	"encoding/json"
-	"github.com/google/git-appraise/repository"
 	"sort"
 	"strconv"
+
+	"github.com/ajzaff/git-review/repository"
 )
 
 const (

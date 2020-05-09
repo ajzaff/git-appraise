@@ -20,10 +20,11 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"github.com/google/git-appraise/repository"
 	"io/ioutil"
 	"os"
 	"os/exec"
+
+	"github.com/ajzaff/git-review/repository"
 )
 
 // LaunchEditor launches the default editor configured for the given repo. This

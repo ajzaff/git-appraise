@@ -20,9 +20,10 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/google/git-appraise/commands/output"
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review"
+
+	"github.com/ajzaff/git-review/commands/output"
+	"github.com/ajzaff/git-review/repository"
+	"github.com/ajzaff/git-review/review"
 )
 
 var listFlagSet = flag.NewFlagSet("list", flag.ExitOnError)

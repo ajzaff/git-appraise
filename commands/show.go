@@ -20,10 +20,11 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/google/git-appraise/commands/output"
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review"
 	"strings"
+
+	"github.com/ajzaff/git-review/commands/output"
+	"github.com/ajzaff/git-review/repository"
+	"github.com/ajzaff/git-review/review"
 )
 
 var showFlagSet = flag.NewFlagSet("show", flag.ExitOnError)

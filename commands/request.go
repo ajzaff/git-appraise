@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/google/git-appraise/commands/input"
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review/gpg"
-	"github.com/google/git-appraise/review/request"
+	"github.com/ajzaff/git-review/commands/input"
+	"github.com/ajzaff/git-review/repository"
+	"github.com/ajzaff/git-review/review/gpg"
+	"github.com/ajzaff/git-review/review/request"
 )
 
 // Template for the "request" subcommand's output.

@@ -20,11 +20,12 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/google/git-appraise/commands/input"
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review"
-	"github.com/google/git-appraise/review/comment"
-	"github.com/google/git-appraise/review/gpg"
+
+	"github.com/ajzaff/git-review/commands/input"
+	"github.com/ajzaff/git-review/repository"
+	"github.com/ajzaff/git-review/review"
+	"github.com/ajzaff/git-review/review/comment"
+	"github.com/ajzaff/git-review/review/gpg"
 )
 
 var acceptFlagSet = flag.NewFlagSet("accept", flag.ExitOnError)

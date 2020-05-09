@@ -24,7 +24,7 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/google/git-appraise/repository"
+	"github.com/ajzaff/git-review/repository"
 )
 
 const (

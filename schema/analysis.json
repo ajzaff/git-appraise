@@ -23,7 +23,7 @@
     },
 
     "url": {
-      "description": "a publicly readable file, which contains JSON formatted analysis results. Those results should conform to the JSON format of the ShipshapeResponse protocol buffer message defined https://github.com/google/shipshape/blob/master/shipshape/proto/shipshape_rpc.proto",
+      "description": "a publicly readable file, which contains JSON formatted analysis results. Those results should conform to the JSON format of the ShipshapeResponse protocol buffer message defined https://github.com/ajzaff/shipshape/blob/master/shipshape/proto/shipshape_rpc.proto",
       "type": "string"
     },
 

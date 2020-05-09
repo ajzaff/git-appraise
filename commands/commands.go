@@ -14,16 +14,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// Package commands contains the assorted sub commands supported by the git-appraise tool.
+// Package commands contains the assorted sub commands supported by the git-review tool.
 package commands
 
 import (
-	"github.com/google/git-appraise/repository"
+	"github.com/ajzaff/git-review/repository"
 )
 
 const notesRefPattern = "refs/notes/devtools/*"
 const archiveRefPattern = "refs/devtools/archives/*"
-const commentFilename = "APPRAISE_COMMENT_EDITMSG"
+const commentFilename = "review_COMMENT_EDITMSG"
 
 // Command represents the definition of a single command.
 type Command struct {

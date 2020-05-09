@@ -1,3 +1,3 @@
-module github.com/google/git-appraise
+module github.com/ajzaff/git-review
 
 go 1.14

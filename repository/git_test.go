@@ -33,25 +33,25 @@ e807a993d1807b154294b9875b9d926b6f246d0c commit
 e90f75882526e9bc5a71af64d60ea50092ed0b1d commit`
 	simpleBatchCatFileOutput = `c1f5a5f135b171cc963b822d338000d185f1ae4f
 342
-{"timestamp":"1450315153","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-appraise/105/"}
+{"timestamp":"1450315153","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-review/105/"}
 
-{"timestamp":"1450315161","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-appraise/105/","status":"success"}
+{"timestamp":"1450315161","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-review/105/","status":"success"}
 
 31ea4952450bbe5db0d6a7a7903e451925106c0f
 141
-{"timestamp":"1440202534","url":"https://travis-ci.org/google/git-appraise/builds/76722074","agent":"continuous-integration/travis-ci/push"}
+{"timestamp":"1440202534","url":"https://travis-ci.org/google/git-review/builds/76722074","agent":"continuous-integration/travis-ci/push"}
 
 bde25250a9f6dc9c56f16befa5a2d73c8558b472
 342
-{"timestamp":"1450434854","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-appraise/112/"}
+{"timestamp":"1450434854","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-review/112/"}
 
-{"timestamp":"1450434860","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-appraise/112/","status":"success"}
+{"timestamp":"1450434860","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-review/112/","status":"success"}
 
 3128dc6881bf7647aea90fef1f4fbf883df6a8fe
 342
-{"timestamp":"1457445850","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-appraise/191/"}
+{"timestamp":"1457445850","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-review/191/"}
 
-{"timestamp":"1457445856","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-appraise/191/","status":"success"}
+{"timestamp":"1457445856","v":0,"agent":"Jenkins(1.627) GitNotesJobLogger","url":"https://jenkins-dot-developer-tools-bundle.appspot.com/job/git-review/191/","status":"success"}
 
 `
 )
